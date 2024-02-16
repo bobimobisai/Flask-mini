@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome {{ title }}</h1>
+    </div>
+
+    <div class="content">
+        <p>Добро пожаловать в {{ title }}! Мы рады видеть вас здесь.</p>
+        <p>Здесь вы найдете все, что нужно для управления вашими данными.</p>
+        <p>Начните прямо сейчас и перейдите к работе!</p>
+    </div>
+
+    <div class="button">
+        <a href="{{ url_for(button[0]['url']) }}">{{ button[0]['name'] }}</a>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 {{ title }}. Все права защищены.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+/* Общие стили для всей страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Стили для заголовка */
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0px 0; /* Изменение: увеличил верхний и нижний отступ */
+    text-align: center;
+    border-bottom: 0px solid #ddd;
+}
+
+/* Стили для контента */
+.content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1px 2px;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Стили для кнопок */
+.button {
+    margin-top: 10px;
+    text-align: center;
+    display: flex; /* Добавлено: используем flexbox */
+    flex-direction: column; /* Добавлено: кнопки будут располагаться вертикально */
+    align-items: center; /* Добавлено: выравниваем кнопки по центру */
+}
+
+.button a {
+    margin-top: 10px; /* Добавлено: увеличиваем расстояние между кнопками */
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.button a:hover {
+    background-color: #45a049;
+}
+/* Стили для навигации */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 15px 20px;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #444;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+nav ul ul li {
+    display: block;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+<header class="header">
+    <h1>{{ title }}</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="{{ url_for(menu_button[0]['url']) }}">Home</a></li>
+        <li><a href="{{ url_for(menu_button[1]['url']) }}">About</a></li>
+        <li>
+            <a href="#0">User</a>
+            <ul>
+                <li><a href="#0">User account</a></li>
+                <li><a href="#0">Test_u_1</a></li>
+                <li><a href="#0">Test_u_2</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#0">Services</a>
+            <ul>
+                <li><a href="#0">Wether</a></li>
+                <li><a href="#0">Test_s_1</a></li>
+                <li><a href="#0">Test_s_2</a></li>
+            </ul>
+        </li>
+        <li><a href="#0">Contact</a></li>
+        <li><a></li>
+            <li>
+                <a href="#0">Login in</a>
+                <ul>
+                    <li><a href="#0">Login</a></li>
+                    <li><a href="#0">Join</a></li>
+                </ul>
+            </li> 
+    </ul>
+</nav>
+    <div class="content">
+        <h2>Базовый функционал</h2>
+        {% for m in menu %}
+        <p> - {{m}}.</p>
+        {% endfor %}
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 WebApp. Все права защищены.</p>
+    </div>
+</body>
+</html>
